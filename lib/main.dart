@@ -20,17 +20,17 @@ class MyChopBoxApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'MyChopBox - SHS Supplies',
         theme: ThemeData(
-          primarySwatch: Colors.green,
-          primaryColor: const Color(0xFF1B5E20),
-          scaffoldBackgroundColor: Colors.grey[100],
+          primarySwatch: Colors.blue,
+          primaryColor: const Color(0xFF1565C0),
+          scaffoldBackgroundColor: const Color(0xFFF5F5F5),
           appBarTheme: const AppBarTheme(
-            backgroundColor: Color(0xFF1B5E20),
+            backgroundColor: Color(0xFF1565C0),
             foregroundColor: Colors.white,
             elevation: 0,
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF1B5E20),
+              backgroundColor: const Color(0xFF1565C0),
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -38,8 +38,8 @@ class MyChopBoxApp extends StatelessWidget {
             ),
           ),
           colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color(0xFF1B5E20),
-            primary: const Color(0xFF1B5E20),
+            seedColor: const Color(0xFF1565C0),
+            primary: const Color(0xFF1565C0),
           ),
         ),
         home: const ShsHomeScreen(),

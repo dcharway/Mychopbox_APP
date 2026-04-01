@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Primary - Green (SHS theme)
-  static const Color green50 = Color(0xFFE8F5E9);
-  static const Color green100 = Color(0xFFC8E6C9);
-  static const Color green600 = Color(0xFF43A047);
-  static const Color green800 = Color(0xFF2E7D32);
-  static const Color green900 = Color(0xFF1B5E20);
+  // Primary - Blue/Teal (MyChopBox theme)
+  static const Color primary = Color(0xFF1565C0);
+  static const Color primaryDark = Color(0xFF0D47A1);
+  static const Color primaryLight = Color(0xFF42A5F5);
+  static const Color primaryBg = Color(0xFFE3F2FD);
 
-  // Amber accents
-  static const Color amber400 = Color(0xFFFFCA28);
-  static const Color amber600 = Color(0xFFFFB300);
+  // Accent - Gold/Yellow
+  static const Color accent = Color(0xFFFFB300);
+  static const Color accentLight = Color(0xFFFFCA28);
+  static const Color accentDark = Color(0xFFF57F17);
 
-  // Red
+  // Teal
+  static const Color teal = Color(0xFF00897B);
+  static const Color tealLight = Color(0xFF4DB6AC);
+
+  // Success / Error
+  static const Color success = Color(0xFF43A047);
+  static const Color error = Color(0xFFE53935);
   static const Color red50 = Color(0xFFFFEBEE);
   static const Color red600 = Color(0xFFE53935);
 
@@ -29,4 +35,17 @@ class AppColors {
 
   // White
   static const Color white = Color(0xFFFFFFFF);
+
+  // Gradient for headers
+  static const LinearGradient headerGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF1565C0), Color(0xFF0D47A1)],
+  );
+
+  static const LinearGradient cardGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF42A5F5), Color(0xFF1565C0)],
+  );
 }
